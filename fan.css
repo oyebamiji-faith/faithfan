@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 65em;
+    width: 35em;
+    border: 1px solid;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+
+}
+.circle{
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    position: relative;
+    left: 80px;
+    top: 20px;
+    background-image: url(../image/garnacho\ im.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fblade{
+    border: 1px solid;
+    border-radius: 90%;
+    width: 17em;
+    height: 4vh;
+    position: relative;
+    top: 11em;
+    left: 4em;
+    background-color: purple;
+    animation-name: turn;
+    animation-duration: 1ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.sblade{
+    border: 1px solid;
+    border-radius: 90%;
+    width: 2em;
+    height: 33vh;
+    position: absolute;
+    bottom: -7em;
+    left: 7.3em;
+    background-color: purple;
+}
+.pointer{
+    border: 1px solid;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    position: absolute;
+    left: 7.3em;
+    background-color: blue;
+    
+    
+}
+@keyframes turn {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.stand{
+    height: 27em;
+    width: 3em;
+    position: absolute;
+    left: 16.2em;
+    top: 26em;
+    background-color: crimson;
+    
+}
+.stand .on img{
+    width: 40px;
+    position: absolute;
+    top: -25em;
+    left: 8.8em;
+}
+.stand2{
+    border-radius: 80%;
+    width: 20em;
+    height: 15vh;
+    position: absolute;
+    top: 26.7em;
+    right: -8.5em;
+    background-color: crimson;
+}
+.stand .off img{
+    width: 40px;
+    position: absolute;
+    top: -20em;
+    left: 8.8em;
+}
